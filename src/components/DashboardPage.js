@@ -51,30 +51,30 @@ class DashboardPage extends React.Component {
         let chart2 = am4core.create("chartdiv2", am4charts.PieChart3D);
         chart2.hiddenState.properties.opacity = 0; // this creates initial fade-in
     
-        chart2.data = [
+	chart2.data = [
           {
-            country: "Lithuania",
-            litres: 501.9
+            country: "Bank Transfer",
+            litres: 250
           },
           {
-            country: "Czech Republic",
-            litres: 301.9
+            country: "Food",
+            litres: 200
           },
           {
-            country: "Ireland",
-            litres: 201.1
+            country: "Investment",
+            litres: 100
           },
           {
-            country: "Germany",
-            litres: 165.8
+            country: "Shopping",
+            litres: 379
           },
           {
-            country: "Australia",
-            litres: 139.9
+            country: "Entertainment",
+            litres: 89.6
           },
           {
-            country: "Austria",
-            litres: 128.3
+            country: "Transport",
+            litres: 120
           }
         ];
     
