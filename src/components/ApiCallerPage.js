@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-import SignIn from './components/SignIn';
 
-class ApiCaller extends React.Component {
+class ApiCallerPage extends React.Component {
 
     constructor(props) {
         super(props);
@@ -25,9 +24,7 @@ class ApiCaller extends React.Component {
     render() {
         return (
             <div>
-                <SignIn></SignIn>
- 
-                {/* <h1>Pokemon</h1> */}
+                <h1>API Caller Page</h1>
                 {/* {console.log(this.state)}
                 {this.state.apiResult.length > 0 && 
                     this.state.apiResult.map((result) => 
@@ -39,4 +36,4 @@ class ApiCaller extends React.Component {
     }
 }
 
-export default ApiCaller;
+export default ApiCallerPage;

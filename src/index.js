@@ -5,27 +5,28 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 import App from './App';
-import ApiCaller from './ApiCaller';
-import RouteController from './RouteController';
+import LogInPage from './components/LogInPage';
+import ApiCallerPage from './components/ApiCallerPage';
+import RouteControllerPage from './components/RouteControllerPage';
 
 const routing = (
     <Router>
         <div>
             <ul>
                 <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/loginpage">Home</Link>
                 </li>
                 <li>
-                    <Link to="/apicaller">Api Caller</Link>
+                    <Link to="/apicallerpage">Api Caller</Link>
                 </li>
                 <li>
-                    <Link to="/routecontroller">Route Controller</Link>
+                    <Link to="/routecontrollerpage">Route Controller</Link>
                 </li>
             </ul>
 
-            <Route path="/" component={App} />
-            <Route path="/apicaller" component={ApiCaller} />
-            <Route path="/routecontroller" component={RouteController} />
+            <Route path="/loginpage" component={LogInPage} />
+            <Route path="/apicallerpage" component={ApiCallerPage} />
+            <Route path="/routecontrollerpage" component={RouteControllerPage} />
         </div>
     </Router>
 )
