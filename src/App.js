@@ -6,6 +6,7 @@ import Transactions from './components/Transactions';
 function App() {
   return (
     <div className="App">
+      <Transactions></Transactions>
     </div>
   );
 }
