@@ -14,24 +14,41 @@ import BarChart from './components/BarChart';
 import PieChart from './components/PieChart';
 import Transactions from './components/Transactions';
 
+// var loggedIn = false;
+// var logInMessage = "Log In";
+
+// componentDidMount () {
+//     if(loggedIn===true) {
+//         loggedIn = false;
+//         logInMessage = "Log Out";
+//     }
+//     else {
+//         loggedIn = true;
+//         logInMessage = "Log In";
+//     }
+// }
+
 const routing = (
     <Router>
         <div>
             <ul>
-                <li>
-                    <Link to="/loginpage">Home</Link>
-                </li>
-                <li>
-                    <Link to="/apicallerpage">Api Caller</Link>
-                </li>
-                <li>
-                    <Link to="/routecontrollerpage">Route Controller</Link>
-                </li>
-                <li>
-                    <Link to="/dashboardpage">Dashboard</Link>
-                </li>
+                <h3>
+                    <li>
+                        <Link to="/loginpage">Log In/Out</Link>
+                    </li>
+                    <li>
+                        <Link to="/apicallerpage">Api Caller</Link>
+                    </li>
+                    <li>
+                        <Link to="/routecontrollerpage">Route Controller</Link>
+                    </li>
+                    <li>
+                        <Link to="/dashboardpage">Dashboard</Link>
+                    </li>
+                </h3>
             </ul>
 
+            {/* <Route path="/" component={LogInPage} /> */}
             <Route path="/barchart" component={BarChart} />
             <Route path="/loginpage" component={LogInPage} />
             <Route path="/apicallerpage" component={ApiCallerPage} />
@@ -41,7 +58,7 @@ const routing = (
     </Router>
 )
 
-ReactDOM.render(<DashboardPage />, document.getElementById('root'));
+ReactDOM.render(routing, document.getElementById('root'));
 //ReactDOM.render(<App />, document.getElementById('root'));
 // npm start on Terminal
 

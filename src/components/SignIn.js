@@ -107,7 +107,7 @@ export default function SignIn(props) {
             control={<Checkbox value="remember" color="primary" />}
             label="Remember me"
           />
-          <Link href="http://localhost:3000/"
+          <Link href="http://localhost:3000/dashboardpage"
             fullWidth
             variant="contained"
             color="primary"

@@ -218,7 +218,7 @@ class DashboardPage extends React.Component {
                 <h1>Welcome Back, {this.state.apiResult.firstName}</h1>
 
                 <div id="chartdiv2" style={{ width: "100%", height: "500px" }}></div>
-                <div id="chartdiv" style={{ width: "100%", height: "500px" }}></div>
+                <div id="chartdiv" style={{ width: "70%", height: "400px" }}></div>
 
                 {/* {const itemData = apiResult.map((result) => result.title)}
                 {console.log("Test : " + itemData)}   */}
