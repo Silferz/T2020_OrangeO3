@@ -25,8 +25,8 @@ class ApiCallerPage extends React.Component {
         return (
             <div>
                 <h1>API Caller Page</h1>
-                {/* {console.log(this.state)}
-                {this.state.apiResult.length > 0 && 
+                {console.log(this.state)}
+                {/* {this.state.apiResult.length > 0 && 
                     this.state.apiResult.map((result) => 
                         <p>{result.employee_name}</p>
                     )
