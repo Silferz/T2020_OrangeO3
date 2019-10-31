@@ -12,7 +12,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route,Redirect } from 'react-router-dom'
 
 let loggedIn = false;
 
@@ -56,13 +56,14 @@ const useStyles = makeStyles(theme => ({
 // function(event: object) => void
 //   event: The event source of the callback.You can pull out the new value by accessing event.target.value(string).
 
-function handleSubmit(e) {
+function handleClick(e) {
+  return <Redirect to="/"/>
   // console.log(e.target.email.value)
   // console.log(e.target.password.value)
   // e.preventDefault();
-  let email = e.target.email.value;
-  let password = e.target.password.value;
-  console.log(email,password)
+  // let email = e.target.email.value;
+  // let password = e.target.password.value;
+  // console.log(email, password)
 }
 
 export default function SignIn(props) {
@@ -77,7 +78,7 @@ export default function SignIn(props) {
         <Typography component="h1" variant="h5">
           Sign in
         </Typography>
-        <form  onSubmit={handleSubmit} className={classes.form} noValidate>
+        <form   className={classes.form} noValidate>
           <TextField
             variant="outlined"
             margin="normal"
@@ -106,15 +107,14 @@ export default function SignIn(props) {
             control={<Checkbox value="remember" color="primary" />}
             label="Remember me"
           />
-          <Button
-            type="submit"
+          <Link href="http://localhost:3000/"
             fullWidth
             variant="contained"
             color="primary"
             className={classes.submit}
           >
             Sign In
-          </Button>
+          </Link>
           <Grid container>
             <Grid item xs>
               <Link href="#" variant="body2">
