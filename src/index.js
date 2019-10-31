@@ -8,6 +8,8 @@ import App from './App';
 import LogInPage from './components/LogInPage';
 import ApiCallerPage from './components/ApiCallerPage';
 import RouteControllerPage from './components/RouteControllerPage';
+import DashboardPage from './components/DashboardPage';
+import BarChart from './components/BarChart';
 
 const routing = (
     <Router>
@@ -22,16 +24,21 @@ const routing = (
                 <li>
                     <Link to="/routecontrollerpage">Route Controller</Link>
                 </li>
+                <li>
+                    <Link to="/dashboardpage">Dashboard</Link>
+                </li>
             </ul>
 
+            <Route path="/barchart" component={BarChart} />
             <Route path="/loginpage" component={LogInPage} />
             <Route path="/apicallerpage" component={ApiCallerPage} />
             <Route path="/routecontrollerpage" component={RouteControllerPage} />
+            <Route path="/dashboardpage" component={DashboardPage} />
         </div>
     </Router>
 )
 
-ReactDOM.render(routing, document.getElementById('root'));
+ReactDOM.render(<BarChart />, document.getElementById('root'));
 //ReactDOM.render(<App />, document.getElementById('root'));
 // npm start on Terminal
 
