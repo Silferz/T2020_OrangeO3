@@ -10,6 +10,7 @@ import ApiCallerPage from './components/ApiCallerPage';
 import RouteControllerPage from './components/RouteControllerPage';
 import DashboardPage from './components/DashboardPage';
 import BarChart from './components/BarChart';
+import PieTest1 from './components/PieTest1';
 
 const routing = (
     <Router>
@@ -38,7 +39,7 @@ const routing = (
     </Router>
 )
 
-ReactDOM.render(<BarChart />, document.getElementById('root'));
+ReactDOM.render(<PieTest1 />, document.getElementById('root'));
 //ReactDOM.render(<App />, document.getElementById('root'));
 // npm start on Terminal
 
